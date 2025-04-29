@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abegail Marquez | Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --main-color: #3b82f6;
+      --accent-color: orange;
+      --bg-light: #f7f9fc;
+      --text-dark: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-light);
+      color: var(--text-dark);
+    }
+
+    header {
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    header .logo {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover, nav a.active {
+      color: var(--main-color);
+      border-bottom: 2px solid var(--main-color);
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 150px 50px 80px;
+      background: linear-gradient(135deg, var(--bg-light), #eef1f6);
+      min-height: 100vh;
+    }
+
+    .hero .text {
+      max-width: 50%;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 span {
+      color: var(--accent-color);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .hero button {
+      padding: 12px 24px;
+      background: var(--main-color);
+      border: none;
+      color: white;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background: #2563eb;
+    }
+
+    .hero img {
+      max-width: 320px;
+      border-radius: 50%;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .socials {
+      margin-top: 20px;
+    }
+
+    .socials a {
+      margin-right: 12px;
+      text-decoration: none;
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      background: var(--text-dark);
+      color: white;
+      text-align: center;
+      line-height: 32px;
+      border-radius: 50%;
+      transition: background 0.3s;
+    }
+
+    .socials a:hover {
+      background: var(--main-color);
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero .text {
+        max-width: 100%;
+      }
+
+      .hero img {
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Abegail Marquez</div>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#">About</a>
+      <a href="#">Skills</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="text">
+      <h1>Hi There,<br>I'm <span>Abegail Marquez</span></h1>
+      <p>I Am Into Web Development</p>
+      <button onclick="alert('Redirect to About Me section or page')">About Me</button>
+      <div class="socials">
+        <a href="#">A</a>
+        <a href="#">B</a>
+        <a href="#">Y</a>
+      </div>
+    </div>
+    <img src="https://via.placeholder.com/320" alt="Profile Picture" />
+  </section>
+
+</body>
+</html>
